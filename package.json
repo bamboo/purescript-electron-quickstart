@@ -1,0 +1,30 @@
+{
+  "name": "purescript-electron-quickstart",
+  "version": "1.0.0",
+  "description": "Quick start for a purely PureScript based Electron project",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "pulp build --to index.js && electron index.js",
+    "test": "pulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bamboo/purescript-electron-quickstart.git"
+  },
+  "keywords": [
+    "purescript",
+    "electron"
+  ],
+  "author": "Rodrigo B. de Oliveira <rbo@acm.org>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bamboo/purescript-electron-quickstart/issues"
+  },
+  "homepage": "https://github.com/bamboo/purescript-electron-quickstart#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.3"
+  }
+}
