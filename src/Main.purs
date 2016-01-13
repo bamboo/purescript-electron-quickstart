@@ -14,8 +14,8 @@ main = do
   log appPath
   homePath <- getPath Home
   log homePath
-  onReady $ do
+  onReady do
     log "starting..."
-    mainWindow <- newBrowserWindow [Width 800, Height 600]
+    mainWindow <- newBrowserWindow [Width 1200, Height 600, WebPreferences [OverlayScrollbars true]]
     mainWindow `onClose` quit
     mainWindow `loadURL` "http://purescript.org"
