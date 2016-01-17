@@ -4,9 +4,9 @@ import Prelude
 import Control.Monad.Eff
 import Control.Monad.Eff.Console
 
+import Electron
 import Electron.App
 import Electron.BrowserWindow
-import Electron.Eff
 
 main :: forall eff. Eff (console :: CONSOLE, electron :: ELECTRON | eff) Unit
 main = do
